@@ -1,0 +1,164 @@
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-header {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.heritage {
+    width: 100%;
+    background-color: #2d77ff;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5%;
+}
+
+.heritage-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.heritage-title {
+    color: white;
+    letter-spacing: 5px;
+}
+
+.heritage-desc {
+    text-align: justify;
+    color: white;
+}
+
+.heritage-image-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    padding: 50px;
+    padding-left: 10px;
+}
+
+.heritage-image {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+}
+
+.motto {
+    width: 100%;
+    background-color: #ffd33c;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+
+.motto-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    padding-left: 10px;
+}
+
+.motto-title {
+    color: #282a35;
+    letter-spacing: 5px;
+}
+
+.motto-desc {
+    text-align: justify;
+    color: #282a35;
+}
+
+.motto-image-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    padding: 50px;
+    padding-right: 10px;
+}
+
+.motto-image {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+}
+
+.motto-desc h4 {
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    .heritage {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 8%;
+    }
+
+    .heritage-text {   
+        width: 100%;
+        padding: 0px;
+    }
+
+    .heritage-title {
+        width: 80%;
+        padding: 10px;
+        margin: auto;
+    }
+
+    .heritage-desc {
+        width: 80%;
+        padding: 10px;
+        padding-bottom: 50px;
+        margin: auto;
+
+    }
+
+    .heritage-image-container {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+
+    .motto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .motto-text {   
+        width: 100%;
+        padding: 0px;
+    }
+
+    .motto-title {
+        width: 80%;
+        padding: 10px;
+        margin: auto;
+    }
+
+    .motto-desc {
+        width: 80%;
+        padding: 10px;
+        padding-bottom: 50px;
+        margin: auto;
+    }
+
+    .motto-image-container {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+
+}
+
+

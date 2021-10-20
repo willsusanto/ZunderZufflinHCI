@@ -1,0 +1,272 @@
+@font-face {
+    font-family: "Open Sans Light";
+    src: 
+    url("../assets/font/Open_Sans/OpenSans-Light.ttf") format("opentype");
+}
+
+.content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.products-header {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    font-size: x-large;
+}
+
+.products-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-item {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #0fa2ff;
+    border-radius: 10px;
+    color: white;
+    transition: background-color .5s;
+}
+
+.menu-item-active {
+    background-color: #2d77ff;
+    border-radius: 10px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-decoration: none;
+    transition: background-color .5s;
+    cursor: pointer;
+}
+
+.menu-item-active:hover {
+    background-color: #0f59e4;
+}
+
+.products-Container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid #fdd835; */
+    border-radius: 20px;
+}
+
+.rowContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.first {
+    margin-top: 0px;
+}
+
+.product-card {
+    width: 100%;
+    /* height: 300px; */
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 5px 5px grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.product-card-image {
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card-desc {
+    width: 50%;
+    height: 100%;
+    padding-left: 10px;
+    color: #282a35;
+}
+
+.product-card-rate {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-image {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+}
+
+.card-header {
+    letter-spacing: 2px;
+    color: #282a35;
+}
+
+.card-price {
+    letter-spacing: 2px;
+}
+
+.card-desc h3 {
+    font-family: "Open Sans Light";
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+.card-desc p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.card-rate {
+    color: #ffd33c;
+    font-family: "Open Sans Bold";
+    text-align: center;
+    font-size: large;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-rate img {
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+}
+
+.card-buy a {
+    padding: 10px;
+    background-color: #0fa2ff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.card-buy a:hover {
+    background-color: #2d77ff;
+}
+
+#paperDiv {
+    display: flex;
+}
+
+#officeDiv {
+    display: none;
+}
+
+#otherDiv {
+    display: none;
+}
+
+#nav-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.nav-page-item {
+    color: #282a35;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    transition: background-color .5s;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.nav-page-item.active {
+    background-color:#2d77ff;
+    color: white;
+}
+
+.nav-page-item.active:hover {
+    background-color: #0f59e4;
+}
+
+/* Biar yang gk active, pake warna beda pas hover */
+.nav-page-item:hover:not(.active) {
+    background-color: #0fa2ff;
+    color: white;
+}
+
+.nav-page-item:active:not(.active) {
+    background-color: #2d77ff;
+}
+
+#paperPageOne {
+    display: block;
+}
+
+#paperPageTwo {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .products-Container {
+        padding: 0px;
+    }
+
+    .first {
+        margin-top: 15px;
+    }
+
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product-card-image {
+        width: 100%;
+    }
+
+    .product-card-desc {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .product-card-rate {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .card-rate {
+        flex-direction: row;
+        height: 100%;
+        width: 50%;
+    }
+
+    .card-rate img {
+        height: 50%;
+    }
+}

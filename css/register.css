@@ -1,0 +1,107 @@
+.content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.register-header {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 5px 5px grey;
+    margin: auto;
+}
+
+.form-container {
+    width: 100%;
+    margin: auto;
+}
+
+.form-header {
+    color: #282a35;
+}
+
+.form-data-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    color: #282a35;
+}
+
+.form-name {
+    color: #282a35;
+    width: 30%;
+}
+
+.form-data {
+    color: #282a35;
+    width: 70%;
+}
+
+.form-data .textBox {
+    padding: 10px;
+    width: 50%;
+}
+
+.form-data .lblRadio {
+    margin-right: 30px;
+}
+
+.form-warning {
+    color: red;
+    margin-left: 30%;
+    padding-left: 30px;
+}
+
+.form-warning-chk {
+    color: red;
+    padding-left: 30px;
+}
+
+.submitButton {
+    background-color: #0fa2ff;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    border-radius: 12px;
+    font-size: medium;
+    text-decoration: none;
+    border: 0px;
+}
+
+.submitButton:hover {
+    background-color: #0f59e4;
+}
+
+.submitButton:active {
+    background-color: #2d77ff;
+}
+
+.chkAgreeDesc {
+    padding: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .form-data .lblRadio {
+        margin-right: 10px;
+    }
+}

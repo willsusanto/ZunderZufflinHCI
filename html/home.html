@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zifflinity Homepage</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/shared/Logo Icon.png" type="image/x-icon">  
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/slideshow.css">
+
+    <!-- JQuery -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <header class="header" id="header"> 
+        <div class="header-toggle" onclick="toggleNavbar();">
+            <svg viewBox="0 0 100 80" width="40" height="40" fill="white">
+                <rect width="100" height="10" />
+                <rect y="30" width="100" height="10" />
+                <rect y="60" width="100" height="10" />
+            </svg>
+        </div>   
+
+        <div id="header-logo-container">
+            <div>
+                <img id="header-logo" src="../assets/shared/Logotype.png" alt="Logotype">
+            </div>
+        </div>
+
+        <div id="header-nav">
+            <div class="navigation">
+                <div class="nav-item">
+                    <a href="home.html">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="products.html">Products</a>
+                </div>
+                <div class="dropdown nav-item">
+                    <a>About Us</a>
+
+                    <div class="dropdown-menu">
+                        <a href="profile.html" class="dropdown-item">Company Profile</a>
+                        <a href="contact.html" class="dropdown-item">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="header-register">
+            <div>
+                <a href="register.html" class="blueButton">Register</a>
+            </div>
+        </div> 
+    </header>
+
+    <div class="content">
+        <section id="slideshow">
+            <div class="slide-container">
+                <div id="leftControl" class="control leftControl">
+                    <img id="imgLeft" src="../assets/slideshow/control_left.jpg">
+                </div>
+        
+                <div class="main-slide">
+                    <div id="slide1" class="slide active">
+                        <img src="../assets/slideshow/promo1.jpg">
+                    </div>
+        
+                    <div id="slide2" class="slide">
+                        <img src="../assets/slideshow/promo2.jpg">
+        
+                    </div>
+        
+                    <div id="slide3" class="slide">
+                        <img src="../assets/slideshow/promo3.jpg">
+                    </div>
+                </div>
+        
+                <div id="rightControl" class="control rightControl">
+                    <img id="imgRight" src="../assets/slideshow/control_right.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="mt-10">
+            <div class="container">
+                <div class="row center text-white font-xlarge letspace-5">
+                    <h1>Trending Products</h1>
+                </div>
+
+                <div id="product-boxes" class="row flex flex-space-evenly">
+                    <div class="boxProductSmall">
+                        <div id="boxImageContainer1">
+                        </div>
+
+                        <div class="row boxHeader">
+                            <h3>Office Lined Paper, A4</h3>
+                        </div>
+
+                        <div class="row flex">
+                            <div class="boxPrice letspace-1">
+                                $7.99
+                            </div>
+
+                            <div class="boxMore letspace-1">
+                                <a href="products.html" type="button" class="moreButton">More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="boxProductSmall">
+                        <div id="boxImageContainer2">
+                        </div>
+
+                        <div class="row boxHeader">
+                            <h3>Paper Clips</h3>
+                        </div>
+
+                        <div class="row flex">
+                            <div class="boxPrice letspace-1">
+                                $8.99
+                            </div>
+
+                            <div class="boxMore letspace-1">
+                                <a href="products.html" type="button" class="moreButton">More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="boxProductSmall">
+                        <div id="boxImageContainer3">
+                        </div>
+
+                        <div class="row boxHeader">
+                            <h3>Deskjet Printer 1000</h3>
+                        </div>
+
+                        <div class="row flex">
+                            <div class="boxPrice letspace-1">
+                                $109.99
+                            </div>
+
+                            <div class="boxMore letspace-1">
+                                <a href="products.html" type="button" class="moreButton">More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="advantages" class="mt-5">
+            <div class="container">
+                <div class="row center font-xlarge letspace-5">
+                    <h1 id="advHeader">Why Zunder Zufflin?</h1>
+                </div>
+
+                <div id="adv-boxes" class="row flex flex-space-evenly">
+                    <div class="boxContainerAdv center">
+                        <div id="boxImgAdv1">
+                        </div>
+
+                        <div class="advHeader">
+                            <h2>Best Value</h2>
+                        </div>
+
+                        <div class="advDesc">
+                            We offer the best products<br>with the best value.
+                        </div>
+                    </div>
+
+                    <div class="boxContainerAdv center">
+                        <div id="boxImgAdv2">
+                        </div>
+
+                        <div class="advHeader">
+                            <h2>Trusted</h2>
+                        </div>
+
+                        <div class="advDesc2">
+                            With over a decade of experience,
+                            we have earned the trust
+                            of our customers.
+                        </div>
+                    </div>
+
+                    <div class="boxContainerAdv center">
+                        <div id="boxImgAdv3">
+                        </div>
+
+                        <div class="advHeader">
+                            <h2>Free Shipping</h2>
+                        </div>
+
+                        <div class="advDesc">
+                            Free shipping for products purchased within the United States.
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </section>
+    </div>  
+
+    <footer class="footer">
+        <div>
+            &copy; 2021 Zunder Zufflin.
+            <br>
+            All rights reserved.
+        </div>
+
+        <div>
+            <a href="#" class="footerLink">Back to Top</a>
+        </div>
+    </footer>
+
+
+    <!-- JS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/slideshow.js"></script>
+</body>
+
+</html>

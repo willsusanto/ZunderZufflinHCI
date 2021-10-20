@@ -1,0 +1,192 @@
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.row {
+    width: 100%;
+}
+
+.mt-10 {
+    margin-top: 10%;
+}
+
+.center {
+    text-align: center;
+}
+
+.letspace-1 {
+    letter-spacing: 1px;
+}
+
+.letspace-5 {
+    letter-spacing: 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+.font-xlarge {
+    font-size: x-large;
+}
+
+.text-white {
+    color: white;
+}
+
+.boxProductSmall {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 5px 5px grey;
+    width: 250px;
+    height: 250px;
+}
+
+.boxHeader {
+    padding-left: 5px;
+}
+
+.box-img {
+    max-height: 100%;
+}
+
+.boxPrice {
+    width: 20%;
+    padding-left: 10px;
+    color: #0fa2ff;
+    font-family: "Open Sans Bold";
+}
+
+.boxMore {
+    margin-left: auto;
+    margin-right: 12px;
+}
+
+.moreButton {
+    background-color: #ffd33c;
+    border-radius: 10px;
+    padding: 7px;
+    text-decoration: none;
+    color: white;
+    font-family: "Open Sans Bold";
+
+}
+
+.flex-space-evenly {
+    justify-content: space-evenly;
+}
+
+.boxContainerAdv {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 350px;
+}
+
+.advHeader {
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.advHeader h2 {
+    margin: 0;
+}
+
+#boxImageContainer1 {
+    height: 60%;
+    background-image: url("../assets/products/paper.jpg");
+    background-position: center;
+    background-size: auto;
+}
+
+#boxImageContainer2 {
+    height: 60%;
+    background-image: url("../assets/products/paperClips.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#boxImageContainer3 {
+    height: 60%;
+    background-image: url("../assets/products/printer.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#slideshow {
+    margin-top: 10%;
+    background-color: #282a35;
+}
+
+#products {
+    background-color: #fdd835;
+    /* height: 500px; */
+    padding-top: 20px;
+    padding-bottom: 5%;
+}
+
+#advantages {
+    background-color: white;
+}
+
+#boxImgAdv1 {
+    background-image: url("../assets/home/save-money.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 180px;
+}
+
+#boxImgAdv2 {
+    background-image: url("../assets/home/trust.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 180px;
+}
+
+#boxImgAdv3 {
+    background-image: url("../assets/home/shipped.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 180px;
+}
+
+@media only screen and (max-width: 800px) {
+    .content {
+        margin-top: 30%;
+    }
+
+    .container h1 {
+        margin-bottom: 0;
+    }
+
+    #products {
+        padding-bottom: 10%;
+    }
+    
+    #product-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxProductSmall {
+        margin-top: 8%;
+    }
+
+    #adv-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #advHeader {
+        margin-bottom: 10%;
+    }
+
+}

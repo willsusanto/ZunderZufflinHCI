@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <link rel="shortcut icon" href="../assets/shared/Logo Icon.png" type="image/x-icon">    
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/products.css">
+</head>
+<body>
+    <header class="header" id="header"> 
+        <div class="header-toggle" onclick="toggleNavbar();">
+            <svg viewBox="0 0 100 80" width="40" height="40" fill="white">
+                <rect width="100" height="10" />
+                <rect y="30" width="100" height="10"/>
+                <rect y="60" width="100" height="10"/>
+            </svg>
+        </div>   
+
+        <div id="header-logo-container">
+            <div>
+                <img id="header-logo" src="../assets/shared/Logotype.png" alt="Logotype">
+            </div>
+        </div>
+
+        <div id="header-nav">
+            <div class="navigation">
+                <div class="nav-item">
+                    <a href="home.html">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="products.html">Products</a>
+                </div>
+                <div class="dropdown nav-item">
+                    <a>About Us</a>
+
+                    <div class="dropdown-menu">
+                        <a href="profile.html" class="dropdown-item">Company Profile</a>
+                        <a href="contact.html" class="dropdown-item">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="header-register">
+            <div>
+                <a href="register.html" class="blueButton">Register</a>
+            </div>
+        </div> 
+    </header>
+
+    <div class="content">
+        <section class="products-header">
+            <h1>Products</h1>
+        </section>
+
+        <section class="products-menu" id="products-menu">
+            <a id="linkPaper" class="menu-item-active" onclick="toggleCategory('paper')">Paper</a>
+            <a id="linkOffice" class="menu-item" onclick="toggleCategory('office')">Office</a>
+            <a id="linkOther" class="menu-item" onclick="toggleCategory('other')">Other</a>
+        </section>
+
+        <div id="paperDiv" class="products-Container">
+            <div id="paperPageOne">
+                <div class="rowContainer first">
+                    <div class="product-card">
+                        <div class="product-card-image">
+                            <img class="card-image" src="../assets/products/paper.jpg">
+                        </div>
+
+                        <div class="product-card-desc">
+                            <div class="card-header">
+                                <h1>Office Lined Paper, A4</h1>
+                            </div>
+
+                            <div class="card-price">
+                                <h2>$7.99</h2>
+                            </div>
+
+                            <div class="card-desc">
+                                <h3>Description</h3>
+                                <p>
+                                    Zunder Zifflin's Top Product. Include one carton of lined office paper, which includes 8 individual reams of paper inside.
+                                    Each ream of paper has 500 sheets of 20 pounds, 100% premium office lined paper.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="product-card-rate">
+                            <div class="card-rate">
+                                <img src="../assets/products/star.png" alt="star">
+                                4.5
+                            </div>
+
+                            <div class="card-buy">
+                                <a href="">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rowContainer">
+                    <div class="product-card">
+                        <div class="product-card-image">
+                            <img class="card-image" src="../assets/products/paper2.jpg">
+                        </div>
+
+                        <div class="product-card-desc">
+                            <div class="card-header">
+                                <h1>Refill Paper, A6</h1>
+                            </div>
+
+                            <div class="card-price">
+                                <h2>$8.99</h2>
+                            </div>
+
+                            <div class="card-desc">
+                                <h3>Description</h3>
+                                <p>
+                                    160 sheets of A6 sized, 100 Gsm thick paper. Fits all kinds of pen, perfect for college student.
+                                    High Quality and fluorescent agent-free, which can protect your eyes.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="product-card-rate">
+                            <div class="card-rate">
+                                <img src="../assets/products/star.png" alt="star">
+                                4
+                            </div>
+
+                            <div class="card-buy">
+                                <a href="">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rowContainer">
+                    <div class="product-card">
+                        <div class="product-card-image">
+                            <img class="card-image" src="../assets/products/paper3.jpg">
+                        </div>
+
+                        <div class="product-card-desc">
+                            <div class="card-header">
+                                <h1>Graph Notebook Paper, B5</h1>
+                            </div>
+
+                            <div class="card-price">
+                                <h2>$16.99</h2>
+                            </div>
+
+                            <div class="card-desc">
+                                <h3>Description</h3>
+                                <p>
+                                    80 sheets of B5 sized, Premium Graph Paper.
+                                    Adopts 100gsm Acid-free Paper with smooth, thick, no-bleeding paper,
+                                    delivering a happy journal experience.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="product-card-rate">
+                            <div class="card-rate">
+                                <img src="../assets/products/star.png" alt="star">
+                                4.7
+                            </div>
+
+                            <div class="card-buy">
+                                <a href="">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>        
+            </div>
+            
+            <div id="paperPageTwo">
+                <div class="rowContainer first">
+                    <div class="product-card">
+                        <div class="product-card-image">
+                            <img class="card-image" src="../assets/products/paper4.jpg">
+                        </div>
+
+                        <div class="product-card-desc">
+                            <div class="card-header">
+                                <h1>Vinyl Paper Matte White, Letter</h1>
+                            </div>
+
+                            <div class="card-price">
+                                <h2>$14.99</h2>
+                            </div>
+
+                            <div class="card-desc">
+                                <h3>Description</h3>
+                                <p>
+                                    22 sheets of Letter sized (8.5" x 11"), Premium Vinyl Paper.
+                                    With this printable vinyl sheets, you can create gorgeous waterproof labels for
+                                    multi-purpose use both indoors & outdoors.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="product-card-rate">
+                            <div class="card-rate">
+                                <img src="../assets/products/star.png" alt="star">
+                                3.9
+                            </div>
+
+                            <div class="card-buy">
+                                <a href="">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>    
+            </div>
+
+            <div id="nav-page">
+                <a id="nav-page-1" class="nav-page-item active" onclick="changePage(1)">1</a>
+                <a id="nav-page-2" class="nav-page-item" onclick="changePage(2)">2</a>
+            </div>
+        </div>
+
+        <div id="officeDiv" class="products-Container">
+            <div class="rowContainer first">
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <img class="card-image" src="../assets/products/paperClips.jpg">
+                    </div>
+
+                    <div class="product-card-desc">
+                        <div class="card-header">
+                            <h1>Office Paper Clips</h1>
+                        </div>
+
+                        <div class="card-price">
+                            <h2>$8.99</h2>
+                        </div>
+
+                        <div class="card-desc">
+                            <h3>Description</h3>
+                            <p>
+                                Set includes 10 boxes of 100 paper clips each, for 1000 paper clips total.
+                                Each paper clip is 2" long, making it ideal for binding together large stacks of paper and files.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="product-card-rate">
+                        <div class="card-rate">
+                            <img src="../assets/products/star.png" alt="star">
+                            4.4
+                        </div>
+
+                        <div class="card-buy">
+                            <a href="">Buy Now</a>
+                        </div>
+                    </div>
+                </div>    
+            </div>  
+
+            <div class="rowContainer">
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <img class="card-image" src="../assets/products/ruler.jpg">
+                    </div>
+
+                    <div class="product-card-desc">
+                        <div class="card-header">
+                            <h1>Aluminium Ruler</h1>
+                        </div>
+
+                        <div class="card-price">
+                            <h2>$8.99</h2>
+                        </div>
+
+                        <div class="card-desc">
+                            <h3>Description</h3>
+                            <p>
+                                Anodized aluminium alloy ruler. Laser-etched markikngs.
+                                Sturdy and solid. Designed for maximum durability and long-time use. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="product-card-rate">
+                        <div class="card-rate">
+                            <img src="../assets/products/star.png" alt="star">
+                            4.9
+                        </div>
+
+                        <div class="card-buy">
+                            <a href="">Buy Now</a>
+                        </div>
+                    </div>
+                </div>    
+            </div>  
+        </div>
+
+        <div id="otherDiv" class="products-Container">
+            <div class="rowContainer first">
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <img class="card-image" src="../assets/products/printer.jpg">
+                    </div>
+
+                    <div class="product-card-desc">
+                        <div class="card-header">
+                            <h1>Deskjet Printer 1000</h1>
+                        </div>
+
+                        <div class="card-price">
+                            <h2>$109.99</h2>
+                        </div>
+
+                        <div class="card-desc">
+                            <h3>Description</h3>
+                            <p>
+                                Print, scan, and copy versatility, an intuitive control panel, and mobile fax with
+                                a printer made with 20% recycled plastic.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="product-card-rate">
+                        <div class="card-rate">
+                            <img src="../assets/products/star.png" alt="star">
+                            4
+                        </div>
+
+                        <div class="card-buy">
+                            <a href="">Buy Now</a>
+                        </div>
+                    </div>
+                </div>    
+            </div>  
+
+            <div class="rowContainer">
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <img class="card-image" src="../assets/products/printer2.jpg">
+                    </div>
+
+                    <div class="product-card-desc">
+                        <div class="card-header">
+                            <h1>Portable Printer 200</h1>
+                        </div>
+
+                        <div class="card-price">
+                            <h2>$299.99</h2>
+                        </div>
+
+                        <div class="card-desc">
+                            <h3>Description</h3>
+                            <p>
+                                A portable printer that fits in the bag.
+                                Easy portable printing wherever you need it, wireless print from your laptop or mobile devices,
+                                anytime, anywhere.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="product-card-rate">
+                        <div class="card-rate">
+                            <img src="../assets/products/star.png" alt="star">
+                            4.8
+                        </div>
+
+                        <div class="card-buy">
+                            <a href="">Buy Now</a>
+                        </div>
+                    </div>
+                </div>    
+            </div>  
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div>
+            &copy; 2021 Zunder Zufflin.
+            <br>
+            All rights reserved.
+        </div>
+
+        <div>
+            <a href="#" class="footerLink">Back to Top</a>
+        </div>
+    </footer>
+
+
+    <!-- JS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/products.js"></script>
+</body>
+</html>
